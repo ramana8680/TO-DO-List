@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/a/a3/Samsung_Notes_icon.png">
+</head>
+
+<body>
+    <div class="add-body">
+        <div class="add-text">
+            <label><h3>Title</h3></label>
+            <input type="text" placeholder="Enter Title" id="inp-topic">
+            <label><h3>Description</h3></label>
+            <textarea placeholder="Enter Content" id="inp-descp"></textarea>
+            <label><h3>Priority</h3></label>
+            <select id="inp-priority" onchange="">
+                <option value="low" >Low</option>
+                <option value="mid">Mid</option>
+                <option value="high">High</option>
+            </select>
+            <div class="final-button">
+                <button type="button" id="inp-submit">Add Note</button>
+                <button type="button" id="inp-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div class="edit-body">
+        <div class="edit-text">
+            <label><h3>Title</h3></label>
+            <input type="text" placeholder="Enter Title" id="edit-topic">
+            <label><h3>Description</h3></label>
+            <textarea placeholder="Enter Content" id="edit-descp"></textarea>
+            <label><h3>Priority</h3></label>
+            <select id="edit-priority" onchange="">
+                <option value="low" >Low</option>
+                <option value="mid">Mid</option>
+                <option value="high">High</option>
+            </select>
+            <div class="final-button">
+                <button type="button" id="edit-submit">Edit</button>
+                <button type="button" id="edit-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div id="popup" class="popup"></div>
+        <div class="profile-pic"></div>
+        <div class="profile-descp">
+            <h3 id="head-name">Hi, Achiever 👋 </h3>
+            <h4>Your Daily Adventure Starts Here</h4>
+        </div>
+    </header>
+    <section class="status-bar" id="status-bar">
+        <div class="sts-box total">
+            <i class="fa-solid fa-list"></i>
+            <div class="box-descp">
+                <h3 style="font-size: 16px; font-weight:500;">Total</h3>
+                <p id="total-count"></p>
+            </div>
+        </div>
+        <div class="sts-box ongoing">
+            <i class="fa-solid fa-spinner" ></i>
+            <div class="box-descp">
+                <h3 style="font-size: 16px; font-weight:500;">On-Going</h3>
+                <span id="incomplete-count"></span>
+            </div>
+        </div>
+        <div class="sts-box highimp">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <div class="box-descp">
+                <h3 style="font-size: 16px; font-weight:500;">Important</h3>
+                <span id="high-count"></span>
+            </div>
+        </div>
+        <div class="sts-box completed">
+            <i class="fa-solid fa-square-check"></i>
+            <div class="box-descp">
+                <h3 style="font-size: 16px; font-weight:500;">Completed</h3>
+                <span id="completed-count"></span>
+            </div>
+        </div>
+    </section>
+    <section class="taskbar-descp">
+        <div class="taskbar-opt">
+            <h2>TO-DO</h2>
+            <i class="fa-solid fa-trash" style="color:black"></i>
+        </div>
+        <section class="Task-Bar" id="Task-Bar">
+        </section>
+    </section>
+    <button id="AddButton"><i class="fa-solid fa-plus"></i></button>
+
+</body>
+<script src="script.js"></script>
+
+</html>
