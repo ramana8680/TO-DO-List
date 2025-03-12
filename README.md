@@ -7,7 +7,7 @@ A simple and responsive **To-Do List** web application that allows users to add,
 - 📌 **Add, edit, and delete tasks**  
 - 📱 **Fully responsive design for all screen sizes**  
 - 🎨 **User-friendly interface with smooth interactions**  
-- 💾 **Local storage support (optional, if implemented)**  
+- 💾 **Local storage support** 
 
 ## 📂 Live Demo & Repository  
 
